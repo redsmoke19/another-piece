@@ -1,6 +1,7 @@
 {
   "plugins": [
-    "stylelint-scss"
+    "stylelint-scss",
+    "stylelint-prettier"
   ],
   "extends": [
     "stylelint-config-standard",
@@ -34,7 +35,8 @@
       "vh",
       "vm",
       "vmax",
-      "vmin"
+      "vmin",
+      "s"
     ]
   }
 }

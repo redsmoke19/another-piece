@@ -1,13 +1,11 @@
 const gulp = require('gulp');
-
+const server = require('browser-sync').create();
 const imageMinify = require('./imageMinify');
 const svgSprite = require('./spriteSVG');
 const pngSprite = require('./spritePNG');
 const styles = require('./styles');
 const pug2html = require('./pug');
 const script = require('./scripts');
-// eslint-disable-next-line import/order
-const server = require('browser-sync').create();
 
 // Запуск сервера а также слежка за файлами
 

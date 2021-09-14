@@ -3,15 +3,17 @@
 @import 'utils/mixins';
 @import 'utils/fonts';
 @import 'utils/sprite';
-//@include sprites($spritesheet-sprites);
 
 html {
-  font-family: 'Open Sans', Arial, serif;
+  font-family: $main-font;
   font-size: 16px;
+  font-weight: 400;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
+  color: $text-color;
   height: 100%;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -96,7 +98,28 @@ button {
 .container {
   margin: 0 auto;
   max-width: $content;
+  padding: 0 40px;
   width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.section__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0 0 47px 0;
 }
 
 //Модули
