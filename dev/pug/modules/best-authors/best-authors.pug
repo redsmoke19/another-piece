@@ -1,30 +1,30 @@
 -
-	var authors = [
-		{
-			name: 'Иван Киррилов',
-			recipesCount: '14',
-			photo: 'static/images/content/author-kirrilov.png'
-		},
-		{
-			name: 'Алексей Качеров',
-			recipesCount: '10',
-			photo: 'static/images/content/author-kachetov.png'
-		},
-		{
-			name: 'Анна Сафронова',
-			recipesCount: '9',
-			photo: 'static/images/content/author-safronova.png'
-		}
-	];
+  var authors = [
+    {
+      name: 'Иван Кириллов',
+      recipesCount: '14',
+      photo: 'static/images/content/author-kirrilov.png'
+    },
+    {
+      name: 'Алексей Качеров',
+      recipesCount: '10',
+      photo: 'static/images/content/author-kachetov.png'
+    },
+    {
+      name: 'Анна Сафронова',
+      recipesCount: '9',
+      photo: 'static/images/content/author-safronova.png'
+    }
+  ];
 
 section.best-authors
-	.container
-		h2.best-authors__title.section__title Лучшие авторы
-		ul.best-authors__list
-			each author in authors
-				li.best-authors__item
-					.best-authors__inner
-						img.best-authors__img(src= author.photo alt="Фото автора рецептов" width="100" height="100")
-						.best-authors__box
-							h3.best-authors__name= author.name
-							p.best-authors__recipes-count Опубликовано #[a.best-authors__link(href="#") #{author.recipesCount} рецептов] за месяц
+  .container
+    h2.best-authors__title.section__title Лучшие авторы
+    ul.best-authors__list
+      each author in authors
+        li.best-authors__item
+          .best-authors__inner
+            img.best-authors__img(src= author.photo alt="Фото автора рецептов" width="100" height="100")
+            .best-authors__box
+              h3.best-authors__name= author.name
+              p.best-authors__recipes-count Опубликовано #[a.best-authors__link(href="#") #{author.recipesCount} рецептов] за месяц

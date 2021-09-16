@@ -25,14 +25,17 @@
 .nav__link {
   color: $text-color;
   text-decoration: none;
-  transition: all ease-out .15s;
+  transition: all ease-out 0.15s;
+
   &--active {
     color: $yellow-color;
   }
+
   &:not([href]) {
     cursor: default;
   }
+
   &[href]:hover {
-    opacity: .7;
+    opacity: 0.7;
   }
 }

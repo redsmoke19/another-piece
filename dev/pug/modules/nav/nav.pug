@@ -1,18 +1,18 @@
 nav.nav(class=!itFooter ? false : 'nav--footer')
-	a.nav__logo-link(href=pageClass === 'index-page' ? false : 'index.html')
-		span.visually-hidden Логотип сайта "Ещё кусочек"
-		unless itFooter
-			+icon('icon-header-logo', 'header__logo', '194', '34')
-		else
-			+icon('icon-footer-logo', 'header__logo', '194', '34')
-	ul.nav__list
-		li.nav__item
-			a.nav__link(class=pageClass!=='index-page' ? false : 'nav__link--active' href=pageClass==='index-page' ? false : 'index.html') Главная
-		li.nav__item
-			a.nav__link(class=pageClass!=='catalog-page' ? false : 'nav__link--active' href=pageClass==='catalog-page' ? false : 'catalog.html') Каталог рецептов
-		li.nav__item
-			a.nav__link(class=pageClass!=='articles-page' ? false : 'nav__link--active' href=pageClass==='articles-page' ? false : '#') Статьи
-	unless itFooter
-		include ../user-nav/user-nav
-	else
-		include ../social-list/social-list
+  a.nav__logo-link(href=pageClass === 'index-page' ? false : 'index.html')
+    span.visually-hidden Логотип сайта "Ещё кусочек"
+    unless itFooter
+      +icon('icon-header-logo', 'header__logo', '194', '34')
+    else
+      +icon('icon-footer-logo', 'header__logo', '194', '34')
+  ul.nav__list
+    li.nav__item
+      a.nav__link(class=pageClass !== 'index-page' ? false : 'nav__link--active' href=pageClass === 'index-page' ? false : 'index.html') Главная
+    li.nav__item
+      a.nav__link(class=pageClass !== 'catalog-page' ? false : 'nav__link--active' href=pageClass === 'catalog-page' ? false : 'catalog.html') Каталог рецептов
+    li.nav__item
+      a.nav__link(class=pageClass !== 'articles-page' ? false : 'nav__link--active' href=pageClass === 'articles-page' ? false : '#') Статьи
+  unless itFooter
+    include ../user-nav/user-nav
+  else
+    include ../social-list/social-list

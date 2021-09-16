@@ -1,16 +1,16 @@
 ul.user-nav
-	if userLogin
-		li.user-nav__item
-			a.user-nav__link(href="#")
-				+icon('icon-user', 'user-nav__icon', '16', '17')
-				span.user-nav__text Алексей
-		li.user-nav__item
-			a.user-nav__link.user-nav__link--transparent.user-nav__link--red(href="#")
-				span.user-nav__text Выход
-	else
-		li.user-nav__item
-			a.user-nav__link.user-nav__link--transparent(href="#")
-				span.user-nav__text Регистрация
-		li.user-nav__item
-			a.user-nav__link(href="#")
-				span.user-nav__text Вход
+  if userLogin
+    li.user-nav__item
+      a.user-nav__link(href="#")
+        +icon('icon-user', 'user-nav__icon', '16', '17')
+        span.user-nav__text Алексей
+    li.user-nav__item
+      a.user-nav__link.user-nav__link--transparent.user-nav__link--red(href="#")
+        span.user-nav__text Выход
+  else
+    li.user-nav__item
+      a.user-nav__link.user-nav__link--transparent(href="#")
+        span.user-nav__text Регистрация
+    li.user-nav__item
+      a.user-nav__link(href="#")
+        span.user-nav__text Вход
