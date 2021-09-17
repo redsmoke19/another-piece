@@ -95,6 +95,22 @@ section {
   margin: -1px;
 }
 
+.text-line {
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    background-color: $yellow-color;
+    bottom: 6px;
+    content: "";
+    height: 12px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
 .section__title {
   font-size: 48px;
   font-weight: 700;

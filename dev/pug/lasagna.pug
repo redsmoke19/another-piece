@@ -1,0 +1,14 @@
+extends layout/main
+
+block variables
+  - var title = 'Рецепт приготовления лазаньи'
+  - var pageClass = 'recipe-page'
+  - var userLogin = true
+
+block content
+  main(class=pageClass)
+    include pages/recipe/recipe-data
+    include pages/recipe/heading
+    include pages/recipe/ingredients
+    include pages/recipe/steps
+    include pages/recipe/ready

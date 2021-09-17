@@ -1,6 +1,5 @@
 const gulp = require('gulp');
 const { argv } = require('yargs');
-const script = require('./gulp/tasks/scripts');
 const fonts = require('./gulp/tasks/fonts');
 const vendors = require('./gulp/tasks/vendorsJS');
 const imageMinify = require('./gulp/tasks/imageMinify');
@@ -14,7 +13,6 @@ const webP = require('./gulp/tasks/webP');
 
 const dev = gulp.parallel(
   pug2html,
-  script,
   vendors,
   styles,
   imageMinify,
@@ -27,4 +25,3 @@ const dev = gulp.parallel(
 exports.default = argv.prod
   ? gulp.series(clean, dev)
   : gulp.series(clean, dev, serve);
-// exports.default = gulp.series(clean, dev, serve);

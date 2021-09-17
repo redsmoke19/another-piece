@@ -13,7 +13,6 @@
   flex-direction: column;
   justify-content: center;
   min-height: 600px;
-  //padding: 118px 0 139px 0;
   width: 50%;
 }
 
@@ -22,22 +21,6 @@
   font-weight: 700;
   line-height: 71px;
   margin: 0 0 20px 0;
-}
-
-.hero__text-line {
-  display: inline-block;
-  position: relative;
-
-  &::before {
-    background-color: $yellow-color;
-    bottom: 6px;
-    content: "";
-    height: 12px;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-  }
 }
 
 .hero__description {
