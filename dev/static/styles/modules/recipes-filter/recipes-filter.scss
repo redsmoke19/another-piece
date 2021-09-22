@@ -32,6 +32,12 @@
   &:not(:last-child) {
     margin: 0 0 4px 0;
   }
+
+  &--input {
+    &:not(:last-child) {
+      margin: 0;
+    }
+  }
 }
 
 .recipes-filter__inner {

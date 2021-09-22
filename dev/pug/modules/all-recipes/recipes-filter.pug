@@ -6,10 +6,10 @@ mixin input(type,id,name,checked)
     if type === "radio"
       input.recipes-filter__radio(type= type id= id name="kitchen" value= id checked=checked)
       label.recipes-filter__label(for= id) #{name}
-    if type === "text"
-      .recipes-filter__box
-        input.recipes-filter__input(type= type id= id name= id value= name)
-        label.recipes-filter__label.visually-hidden(for="countFrom") #{name}
+  if type === "text"
+    .recipes-filter__box.recipes-filter__box--input
+      input.recipes-filter__input(type= type id= id name= id value= name)
+      label.recipes-filter__label.visually-hidden(for="countFrom") #{name}
 
 .recipes-filter
   form.recipes-filter__form

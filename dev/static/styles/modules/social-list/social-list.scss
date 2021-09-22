@@ -1,6 +1,8 @@
 .social-list {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 200px;
 }
 
 .social-list__item {
