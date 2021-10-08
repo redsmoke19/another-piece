@@ -13,6 +13,6 @@ nav.nav(class=!itFooter ? false : 'nav--footer')
     li.nav__item
       a.nav__link(class=pageClass !== 'articles-page' ? false : 'nav__link--active' href=pageClass === 'articles-page' ? false : '#') Статьи
   unless itFooter
-    include ../user-nav/user-nav
+    include /dev/pug/modules/user-nav/user-nav
   else
-    include ../social-list/social-list
+    include /dev/pug/modules/social-list/social-list

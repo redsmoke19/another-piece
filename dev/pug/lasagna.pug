@@ -1,4 +1,4 @@
-extends layout/main
+extends /dev/pug/layout/main
 
 block variables
   - var title = 'Рецепт приготовления лазаньи'
@@ -7,8 +7,8 @@ block variables
 
 block content
   main(class=pageClass)
-    include pages/recipe/recipe-data
-    include pages/recipe/heading
-    include pages/recipe/ingredients
-    include pages/recipe/steps
-    include pages/recipe/ready
+    include /dev/pug/pages/recipe/recipe-data
+    include /dev/pug/pages/recipe/heading
+    include /dev/pug/pages/recipe/ingredients
+    include /dev/pug/pages/recipe/steps
+    include /dev/pug/pages/recipe/ready

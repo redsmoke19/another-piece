@@ -1,4 +1,4 @@
-include ../helpers/mixins
+include /dev/pug/helpers/mixins
 block variables
 
 doctype html
@@ -14,7 +14,7 @@ html(lang="ru-RU")
     link(rel="stylesheet" type='text/css' href="static/css/styles.css")
   body
     .wrapper
-      include ../modules/header/header
+      include /dev/pug/modules/header/header
       .content
         block content
-      include ../modules/footer/footer
+      include /dev/pug/modules/footer/footer

@@ -1,4 +1,4 @@
-extends layout/main
+extends /dev/pug/layout/main
 
 block variables
   - var title = 'Каталог рецептов'
@@ -7,6 +7,6 @@ block variables
 
 block content
   main(class=pageClass)
-    include modules/hero/hero
-    include modules/best-recipes/best-recipes
-    include modules/all-recipes/all-recipes
+    include /dev/pug/modules/hero/hero
+    include /dev/pug/modules/best-recipes/best-recipes
+    include /dev/pug/modules/all-recipes/all-recipes

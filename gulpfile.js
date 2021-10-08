@@ -9,14 +9,12 @@ const pug2html = require('./gulp/tasks/pug');
 const spriteSVG = require('./gulp/tasks/spriteSVG');
 const serve = require('./gulp/tasks/serve');
 const spritePNG = require('./gulp/tasks/spritePNG');
-const webP = require('./gulp/tasks/webP');
 
 const dev = gulp.parallel(
   pug2html,
   vendors,
   styles,
   imageMinify,
-  webP,
   spriteSVG,
   spritePNG,
   fonts,
