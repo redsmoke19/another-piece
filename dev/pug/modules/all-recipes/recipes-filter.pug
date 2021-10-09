@@ -15,27 +15,27 @@ mixin input(type,id,name,checked)
   form.recipes-filter__form
     fieldset.recipes-filter__fieldset
       legend.recipes-filter__legend Прием пищи
-      +input('checkbox', 'eatingBreakfast', 'Завтрак')
-      +input('checkbox', 'eatingLunch', 'Обед', true)
-      +input('checkbox', 'eatingDinner', 'Ужин')
+      +input("checkbox", "eatingBreakfast", "Завтрак")
+      +input("checkbox", "eatingLunch", "Обед", true)
+      +input("checkbox", "eatingDinner", "Ужин")
     fieldset.recipes-filter__fieldset
       legend.recipes-filter__legend Количество ингредиентов
       .recipes-filter__inner
-        +input('text', 'countFrom', 'от 1')
+        +input("text", "countFrom", "от 1")
         span.recipes-filter__line &mdash;
-        +input('text', 'countBefore', 'до 21')
+        +input("text", "countBefore", "до 21")
     fieldset.recipes-filter__fieldset
       legend.recipes-filter__legend Кухня
-      +input('radio', 'kitchenAsian', 'Азиатская')
-      +input('radio', 'kitchenRussian', 'Русская', true)
-      +input('radio', 'kitchenGeorgian', 'Грузинская')
-      +input('radio', 'kitchenItalian', 'Итальянская')
-      +input('radio', 'kitchenAmerican', 'Американская')
+      +input("radio", "kitchenAsian", "Азиатская")
+      +input("radio", "kitchenRussian", "Русская", true)
+      +input("radio", "kitchenGeorgian", "Грузинская")
+      +input("radio", "kitchenItalian", "Итальянская")
+      +input("radio", "kitchenAmerican", "Американская")
     fieldset.recipes-filter__fieldset
       legend.recipes-filter__legend Вид блюда
-      +input('checkbox', 'typeSoups', 'Супы')
-      +input('checkbox', 'typeDishes', 'Основные блюда')
-      +input('checkbox', 'typeSalads', 'Салаты', true)
-      +input('checkbox', 'typeDesserts', 'Десерты')
-      +input('checkbox', 'typeSnack', 'Перекус', true)
-      +input('checkbox', 'typeHoliday', 'На праздник')
+      +input("checkbox", "typeSoups", "Супы")
+      +input("checkbox", "typeDishes", "Основные блюда")
+      +input("checkbox", "typeSalads", "Салаты", true)
+      +input("checkbox", "typeDesserts", "Десерты")
+      +input("checkbox", "typeSnack", "Перекус", true)
+      +input("checkbox", "typeHoliday", "На праздник")
