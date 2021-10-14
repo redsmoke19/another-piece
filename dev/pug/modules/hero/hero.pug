@@ -1,3 +1,6 @@
+- var pathContentImg = 'static/images/content/';
+- var pathCommonImg = 'static/images/common/';
+
 section.hero
   .hero__content
     .container
@@ -10,13 +13,13 @@ section.hero
         if pageClass === "index-page"
           a.hero__button(href="#") Популярные рецепты
         .hero__pointer
-          img.hero__pointer-arrow(src="static/images/common/icon-arrow.png" alt="Стрелка указывающая на блюдо" width="192" height="46")
+          img.hero__pointer-arrow(src=pathCommonImg + "icon-arrow.png" alt="Стрелка указывающая на блюдо" width="192" height="46")
           if pageClass === "index-page"
-            p.hero__pointer-text Тост с яицом и сыром #[br] (на завтрак)
+            p.hero__pointer-text Тост с яйцом и сыром #[br] (на завтрак)
           else if pageClass === "catalog-page"
             p.hero__pointer-text Салат с тунцом #[br] (на обед)
   .hero__image
     if pageClass === "index-page"
-      img.hero__img(src="static/images/content/hero-index@1x.png" srcset="static/images/content/hero-index@2x.png 2x" width="660" height="670" alt="Изображение яичницы")
+      img.hero__img(src=pathContentImg + "hero-index@1x.png" srcset=pathContentImg + "hero-index@2x.png 2x" width="660" height="670" alt="Изображение яичницы")
     else if pageClass === "catalog-page"
-      img.hero__img(src="static/images/content/hero-catalog@1x.png" srcset="static/images/content/hero-catalog@2x.png 2x" width="660" height="670" alt="Изображение салата")
+      img.hero__img(src=pathContentImg + "hero-catalog@1x.png" srcset=pathContentImg + "hero-catalog@2x.png 2x" width="660" height="670" alt="Изображение салата")
