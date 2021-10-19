@@ -1,5 +1,5 @@
 .recipe-ingredients {
-  margin: 0 0 90px 0;
+  margin: 0 0 97px 0;
 }
 
 .recipe-ingredients__wrapper {
@@ -43,7 +43,7 @@
 
 .recipe-ingredients__component {
   flex: 0 0 auto;
-  line-height: 1;
+  line-height: 15px;
   padding-right: 10px;
 }
 
@@ -55,6 +55,6 @@
 
 .recipe-ingredients__count {
   flex: 0 0 auto;
-  line-height: 1;
+  line-height: 15px;
   padding-left: 10px;
 }

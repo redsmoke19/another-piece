@@ -4,6 +4,15 @@
   justify-content: space-between;
 }
 
+.nav__logo-link {
+  position: relative;
+  top: 7px;
+}
+
+.nav--footer .nav__logo-link {
+  top: 0;
+}
+
 .nav--footer .nav__link {
   color: $white;
 }
